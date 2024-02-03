@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d196703a.css",
+    "main.js": "/static/js/main.e51ebd5a.js",
+    "static/media/background.png": "/static/media/background.04e3daedb60244d0148d.png",
+    "static/media/MeaCulpa-Regular.ttf": "/static/media/MeaCulpa-Regular.d395f740b55d92e4bc43.ttf",
+    "static/media/logo.png": "/static/media/logo.c16288a87760bda02965.png",
+    "static/media/WeddingSalonIcon.svg": "/static/media/WeddingSalonIcon.8d426b9184e3798e92f4a4514dde3f44.svg",
+    "static/media/SeatingArrangementIcon.svg": "/static/media/SeatingArrangementIcon.026a364a674781ac1dbe0df211d945b7.svg",
+    "static/media/CheckoutIcon.svg": "/static/media/CheckoutIcon.efeebca55ccae04375e89e2e7a2ac361.svg",
+    "static/media/HomeIcon.svg": "/static/media/HomeIcon.814b54fa35adac9730afb00f43e1cb1e.svg",
+    "static/media/ProfileIcon.svg": "/static/media/ProfileIcon.047705b711ceb5b0ed8566dd44a29a6a.svg",
+    "static/media/ContactIcon.svg": "/static/media/ContactIcon.6e6021601fde3b3c73f90e20a33e43d3.svg",
+    "index.html": "/index.html",
+    "main.d196703a.css.map": "/static/css/main.d196703a.css.map",
+    "main.e51ebd5a.js.map": "/static/js/main.e51ebd5a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d196703a.css",
+    "static/js/main.e51ebd5a.js"
+  ]
+}
