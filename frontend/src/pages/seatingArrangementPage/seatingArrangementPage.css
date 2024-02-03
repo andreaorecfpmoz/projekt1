@@ -1,0 +1,83 @@
+.containerSeatingArragment {
+    padding: 20px;
+    background-color:#EEDDD3;
+}
+
+.tableTitle{
+    justify-content: center !important;
+    font-weight: bold;
+}
+
+.arragmentSeat {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+
+}
+
+
+.addTableButton {
+
+    background-color: #D0B7A9 !important;
+    border: 1px solid #d1c1b8 !important;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    font-weight: 600;
+
+    height: 40px;
+
+
+    display: flex;
+}
+
+.chooseSalonButton {
+    background-color: #D0B7A9 !important;
+    border: 1px solid #d1c1b8 !important;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+    height: 40px;
+
+
+    display: flex;
+}
+
+.chooseSalonFlex {
+    display: flex;
+}
+
+@media (max-width: 766px) {
+    .addTableButton{
+        width: auto;
+    }
+    .chooseSalonButton {
+        width: auto;
+    }
+    .chooseSalonFlex {
+        display: block;
+    }
+  }
+
+
+.seatingArragmentCardHeader {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.seatingArragmentEditBtn {
+    background-color: #D0B7A9 !important;
+    border: 1px solid #d1c1b8 !important;
+    border-radius: 4px;
+}
+

@@ -1,0 +1,57 @@
+.singupInputField {
+  background-color: #d0b7a9bb !important;
+}
+
+.selectValue {
+  width: 50%;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  padding-left: 10px !important;
+}
+
+.option {
+  height: 40px !important;
+}
+
+
+.inputFiledBig {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  background: rgb(208, 183, 169);
+  background: linear-gradient(
+    87deg,
+    rgba(208, 183, 169, 1) 0%,
+    rgba(208, 183, 169, 1) 36%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 0.375rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+    width: 50%;
+}
+
+.middleLine {
+height: 30px;
+    width: 2px;
+    border-radius: 4px;
+    background-color: rgb(152, 133, 122);
+}
+
+
+.innerContainer {
+    height: 100vh;
+}
+
+.appLogo {
+    padding-top: 50px;
+}
+
+.singUpBtn {
+    background-color: #D0B7A9 !important;
+
+}

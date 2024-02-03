@@ -1,0 +1,41 @@
+.addTableContainer {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.addTableInput {
+    width: 50%;
+}
+
+.addTableSubmitBtn{
+    background-color: #D0B7A9 !important;
+    border: 1px solid #d1c1b8 !important;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.goBackSubmitBtn{
+    background-color: #D0B7A9 !important;
+    border: 1px solid #d1c1b8 !important;
+    border-radius: 4px;
+    width: 20%;
+    margin-left: 20px;
+}
+
+@media (max-width: 766px) {
+    .addTableSubmitBtn {
+        width: 100% !important;
+    }
+    .goBackSubmitBtn {
+        width: 100%;
+    margin-left: 0px;
+    margin-top: 20px;
+
+    }
+
+    .addTableInput {
+        width: 100%;
+    }
+  }

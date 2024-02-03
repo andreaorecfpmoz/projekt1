@@ -1,0 +1,167 @@
+.weddingSalonContainer {
+  margin-top: 20px;
+  margin-bottom: 20px; 
+  height: 100% !important;
+}
+
+@media (max-width: 600px) {
+  .weddingSalonContainer {
+    max-height: 75vh;
+  }
+}
+
+.moreInfoWeddingSalon {
+  background-color: #d0b7a9 !important;
+  border: 1px solid black;
+  width: 100% !important;
+}
+
+.salonImage {
+  padding-top: 10px;
+  height: 300px;
+  object-fit: contain;
+  max-width: 500px;
+}
+
+.addSalonBtn {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #eeddd3;
+  border-top: 1px solid #d1c1b8;
+
+  width: 100%;
+  height: 70px;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 10px;
+  margin-top: 100px;
+  display: flex;
+}
+
+.addSalonButton {
+  background-color: #d0b7a9 !important;
+  border: 1px solid black;
+  width: 100% !important;
+  height: 50px !important;
+}
+
+.addSalonButtonBig{
+
+
+  background-color: #d0b7a9 !important;
+  border: 1px solid black;
+  width: 100% !important;
+  height: 50px !important;
+}
+
+.cardBodyWeddingSalon {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.space {
+  width: 10%;
+}
+
+@media (max-width: 1000px) {
+  .addSalonBtn {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .salonImage {
+    max-width: 200px;
+  }
+}
+
+.cardBtns {
+    display: flex;
+    width: 100%;
+}
+
+
+.react-datepicker-wrapper {
+  padding-bottom: 20px !important;
+}
+
+.react-datepicker__input-container {
+  input {
+    border: none;
+    width: 100%;
+    background-color: #d0b7a9;
+    border: 1px solid #d1c1b8;
+    border-radius: 4px;
+    text-align: center;
+  }
+}
+
+.react-datepicker {
+  border: 1px solid red;
+  border-radius: 4px;
+}
+
+
+.react-datepicker__month-container {
+    background-color: #eeddd3;
+}
+
+.react-datepicker__day {
+  color: #444;
+  &:hover {
+    background-color: #d0b7a9 !important;
+  }
+}
+
+.react-datepicker__day--selected {
+  background-color: #d0b7a9 !important;
+  color: white;
+}
+
+.react-datepicker__day--keyboard-selected {
+    background-color: #d0b7a9 !important;
+}
+
+.react-datepicker__header {
+  background-color: #d0b7a9 !important;
+  color: black !important;
+}
+.react-datepicker__navigation-icon::before{
+  border-color: black !important;
+}
+
+.react-datepicker__day--disabled {
+    color: #9b9b9b !important;
+}
+
+.rezervationDate {
+  background-color: #d0b7a99f !important;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+
+}
+
+.mladenci {
+  background-color: #d0b7a9 !important;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-family: 'MeaCulpa';
+  font-size: 41px;
+  display: flex;
+  align-items: center;
+}
+
+.textMladenci{
+  color: #3d3d3d;
+}
+
+.spaceMladenci {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 50px;
+  color: #BE9B88;
+}

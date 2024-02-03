@@ -1,0 +1,62 @@
+.logo {
+  margin-bottom: -100px;
+}
+
+@media (max-height: 766px) {
+ .logo{
+  margin-bottom: -10px;
+ }
+}
+
+.bottom {
+  padding-top: 100px;
+}
+
+.hipperLink {
+  color: #3d3d3d;
+  text-decoration: none;
+  padding-top: 20px;
+}
+
+.error {
+  border:2px solid #ff333352 !important;
+}
+
+.headerLogin {
+  font-family: MeaCulpa !important;
+  font-size: 50px;
+  padding-bottom: 20px;
+
+  justify-content: center !important;
+}
+
+.bottomBtns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gostBtn {
+  margin-bottom: 20px;
+}
+
+.loginBtn {
+    background-color: #D0B7A9 !important;
+    border: 1px solid black;
+    width: 100% !important;
+}
+
+.hipperLink {
+  background-color: #D0B7A9 !important;
+  border: 1px solid black;
+  width: 50% !important;
+}
+
+
+
+@font-face {
+  font-family: 'MeaCulpa';
+  src: url('../../styles/fonts/MeaCulpa-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
