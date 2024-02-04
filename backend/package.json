@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel routes --out-dir dist/routes && babel services --out-dir dist/services",
-    "start": "npm run build && node dist/server.js"
+    "build": "babel routes --out-dir dist/routes && babel services --out-dir dist/services && babel index.js --out-dir dist && babel config.js --out-dir dist",
+    "start": "npm run build && node dist/index.js"
   },
   "author": "",
   "license": "ISC",
