@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel routes --out-dir dist/routes && babel services --out-dir dist/services",
+    "start": "npm run build && node dist/server.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +17,14 @@
     "express": "^4.18.2",
     "mysql": "^2.18.1",
     "mysql2": "^3.7.0"
-  }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/node": "^7.0.0"
+  },
+  "babel": {
+    "presets": ["@babel/preset-env"]
+  }  
 }
