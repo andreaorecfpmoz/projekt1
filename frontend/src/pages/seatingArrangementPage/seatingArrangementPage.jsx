@@ -168,7 +168,7 @@ export default function SeatingArrangementPage(props) {
     });
 
     try {
-      const response = await fetch('http://wedease.studenti.sum.ba//stolice/add', {
+      const response = await fetch('http://wedease.studenti.sum.ba/stolice/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -210,7 +210,7 @@ export default function SeatingArrangementPage(props) {
         try {
   
           const tablesResponse = await fetch(
-            `http://wedease.studenti.sum.ba/get/rezervedTables/${rezervation[0].IDRezervacije}`
+            `http://wedease.studenti.sum.ba/stolovi/get/rezervedTables/${rezervation[0].IDRezervacije}`
           );
           if (!tablesResponse.ok) {
             throw new Error(`HTTP error! status: ${tablesResponse.status}`);

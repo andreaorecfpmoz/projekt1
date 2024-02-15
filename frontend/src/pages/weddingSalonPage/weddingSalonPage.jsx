@@ -150,7 +150,7 @@ export default function WeddingSalonPage(props) {
     const fetchReservations = async (reservationId) => {
       try {
         const response = await fetch(
-          `http://wedease.studenti.sum.ba/get/korisnik/${reservationId}`
+          `http://wedease.studenti.sum.ba/rezervacije/get/korisnik/${reservationId}`
         );
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
