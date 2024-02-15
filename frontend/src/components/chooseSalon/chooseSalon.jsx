@@ -9,7 +9,7 @@ export default function ShooseSalon(props) {
 
 
   useEffect(() => {
-    fetch('http://pzi192024.studenti.sum.ba//svadbeniSaloni/get')
+    fetch('http://wedease.studenti.sum.ba/svadbeniSaloni/get')
       .then((response) => response.json())
       .then((data) => {
         setAllSalons(data);
