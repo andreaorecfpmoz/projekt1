@@ -20,7 +20,7 @@ export default function LoginPage(props) {
     e.preventDefault();
     try {
       setError(false);
-      const response = await fetch('http://localhost:3000/users/login', {
+      const response = await fetch('http://wedease.studenti.sum.ba/users/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

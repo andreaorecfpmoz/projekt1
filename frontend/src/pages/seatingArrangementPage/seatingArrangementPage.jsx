@@ -24,7 +24,7 @@ export default function SeatingArrangementPage(props) {
       const fetchReservations = async () => {
         try {
           const response = await fetch(
-            `http://localhost:3000/rezervacije/get/korisnik/${userId}`
+            `http://wedease.studenti.sum.ba/rezervacije/get/korisnik/${userId}`
           );
           if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
@@ -56,7 +56,7 @@ export default function SeatingArrangementPage(props) {
 
     if (table && !oldTable) {
       try {
-        const response = await fetch('http://localhost:3000/stolovi/add', {
+        const response = await fetch('http://wedease.studenti.sum.ba/stolovi/add', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -84,7 +84,7 @@ export default function SeatingArrangementPage(props) {
     if (oldTable) {
       try {
         const response = await fetch(
-          `http://localhost:3000/stolovi/edit/${oldTable.IDStola}`,
+          `http://wedease.studenti.sum.ba/stolovi/edit/${oldTable.IDStola}`,
           {
             method: 'PUT',
             headers: {
@@ -152,7 +152,7 @@ export default function SeatingArrangementPage(props) {
 
     const res = [];
 
-    console.log( rezervation[0].IDRezervacije)
+    
 
     updatedTables.forEach((table) => {
       if (table.IDStola === tableId) {
@@ -168,7 +168,7 @@ export default function SeatingArrangementPage(props) {
     });
 
     try {
-      const response = await fetch('http://localhost:3000/stolice/add', {
+      const response = await fetch('http://wedease.studenti.sum.ba//stolice/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -192,7 +192,7 @@ export default function SeatingArrangementPage(props) {
 
     try {
       const response = await fetch(
-        `http://localhost:3000/stolovi/get/${salonID.IDSalona}`
+        `http://wedease.studenti.sum.ba/stolovi/get/${salonID.IDSalona}`
       );
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -210,7 +210,7 @@ export default function SeatingArrangementPage(props) {
         try {
   
           const tablesResponse = await fetch(
-            `http://localhost:3000/stolovi/get/rezervedTables/${rezervation[0].IDRezervacije}`
+            `http://wedease.studenti.sum.ba/get/rezervedTables/${rezervation[0].IDRezervacije}`
           );
           if (!tablesResponse.ok) {
             throw new Error(`HTTP error! status: ${tablesResponse.status}`);
@@ -218,12 +218,12 @@ export default function SeatingArrangementPage(props) {
           const tables = await tablesResponse.json();
           
           const tablesDetailsPromises = tables.map(table =>
-            fetch(`http://localhost:3000/stolovi/getTablesById/${table.IDStola}`).then(res => res.json())
+            fetch(`http://wedease.studenti.sum.ba/stolovi/getTablesById/${table.IDStola}`).then(res => res.json())
           );
           const detailedTables = await Promise.all(tablesDetailsPromises);
   
 
-          const guestsResponse = await fetch(`http://localhost:3000/stolice/get/${rezervation[0].IDRezervacije}`);
+          const guestsResponse = await fetch(`http://wedease.studenti.sum.ba/stolice/get/${rezervation[0].IDRezervacije}`);
           if (guestsResponse.ok) {
             const tablesData = await guestsResponse.json();
           
@@ -297,7 +297,7 @@ export default function SeatingArrangementPage(props) {
           </>
         )}
         <div className='row'>
-          {tables.map((table) => {
+          {tables?.map((table) => {
             return (
               <div className='col-lg-4 col-md-6 col-sm-12 mb-10 arragmentSeat'>
                 <div className='card justify-content-center align-items-center'>

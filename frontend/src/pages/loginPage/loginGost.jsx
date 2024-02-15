@@ -21,7 +21,7 @@ export default function LoginGost(props) {
     e.preventDefault()
     try {
         setError(false);
-      const response = await fetch('http://localhost:3000/users/loginGost', {
+      const response = await fetch('http://wedease.studenti.sum.ba/users/loginGost', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

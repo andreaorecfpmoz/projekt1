@@ -26,7 +26,7 @@ export default function SingUpPage(props) {
     try {
       localStorage.removeItem('user');
 
-      const response = await fetch('http://localhost:3000/users/register', {
+      const response = await fetch('http://wedease.studenti.sum.ba/users/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

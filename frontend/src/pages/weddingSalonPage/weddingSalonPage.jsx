@@ -25,7 +25,7 @@ export default function WeddingSalonPage(props) {
   const [mladenci, setMladenci] = useState();
 
   useEffect(() => {
-    fetch('http://localhost:3000/svadbeniSaloni/get')
+    fetch('http://wedease.studenti.sum.ba/svadbeniSaloni/get')
       .then((response) => response.json())
       .then((data) => {
         setWeddingSalons(data);
@@ -46,7 +46,7 @@ export default function WeddingSalonPage(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch('http://localhost:3000/svadbeniSaloni/add', {
+    fetch('http://wedease.studenti.sum.ba/svadbeniSaloni/add', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -75,7 +75,7 @@ export default function WeddingSalonPage(props) {
   const calendarOpen = (idSalona) => {
     setIdSalona(idSalona);
     console.log(idSalona);
-    fetch(`http://localhost:3000/rezervacije/get/${idSalona}`)
+    fetch(`http://wedease.studenti.sum.ba/rezervacije/get/${idSalona}`)
       .then((response) => response.json())
       .then((reservedDates) => {
         setReservedDates(reservedDates);
@@ -110,7 +110,7 @@ export default function WeddingSalonPage(props) {
     ].join('-');
 
     try {
-      const response = await fetch('http://localhost:3000/rezervacije/add', {
+      const response = await fetch('http://wedease.studenti.sum.ba/rezervacije/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -150,7 +150,7 @@ export default function WeddingSalonPage(props) {
     const fetchReservations = async (reservationId) => {
       try {
         const response = await fetch(
-          `http://localhost:3000/rezervacije/get/korisnik/${reservationId}`
+          `http://wedease.studenti.sum.ba/get/korisnik/${reservationId}`
         );
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -162,7 +162,7 @@ export default function WeddingSalonPage(props) {
           setGostDatum(rezervationData[0]?.DatumRezervacije);
           try {
             const response = await fetch(
-              `http://localhost:3000/users/get/${rezervationData[0]?.IDKorisnika}`
+              `http://wedease.studenti.sum.ba/users/get/${rezervationData[0]?.IDKorisnika}`
             );
             if (!response.ok) {
               throw new Error(`HTTP error! status: ${response.status}`);
@@ -174,7 +174,7 @@ export default function WeddingSalonPage(props) {
           }
           try {
             const response = await fetch(
-              `http://localhost:3000/svadbeniSaloni/get/${rezervationData[0]?.IDSvadbenogSalona}`
+              `http://wedease.studenti.sum.ba/svadbeniSaloni/get/${rezervationData[0]?.IDSvadbenogSalona}`
             );
             if (!response.ok) {
               throw new Error(`HTTP error! status: ${response.status}`);
@@ -324,7 +324,7 @@ export default function WeddingSalonPage(props) {
           </div>
         </div>
       ) : (
-        <div className='container mt-4'>
+        <div className='container mt-4'style={{paddingBottom: '100px'}}>
           <h2>Dodaj Salon</h2>
           <form>
             <div className='mb-3'>
